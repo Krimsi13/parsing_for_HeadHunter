@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Стажер-разработчик Python",
+    "url_vacancy": "https://hh.ru/vacancy/92363159",
+    "salary_from": 50000,
+    "salary_to": 50000,
+    "salary_currency": "RUR",
+    "requirements": "Отличные коммуникативные навыки. Любовь к коду. Быть активным и внедрять эффективные решения."
+  },
+  {
+    "name": "Программист-стажер",
+    "url_vacancy": "https://hh.ru/vacancy/92900731",
+    "salary_from": 0,
+    "salary_to": 50000,
+    "salary_currency": "RUR",
+    "requirements": "Базовые знания любого языка программирования (<highlighttext>Python</highlighttext>, Visual Basic, PHP, Java, С++ и т.п.), SQL, HTML. ️ Грамотная письменная и устная..."
+  },
+  {
+    "name": "Стажер-разработчик Python",
+    "url_vacancy": "https://hh.ru/vacancy/92897162",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Развитие навыков оценки и планирования. Профильное техническое образование. Знание основ программирования. Знание <highlighttext>Python</highlighttext> и баз данных (желательно). Наличие выполненных проектов..."
+  },
+  {
+    "name": "Программист-стажер",
+    "url_vacancy": "https://hh.ru/vacancy/92900732",
+    "salary_from": 0,
+    "salary_to": 50000,
+    "salary_currency": "RUR",
+    "requirements": "Базовые знания любого языка программирования (<highlighttext>Python</highlighttext>, Visual Basic, PHP, Java, С++ и т.п.), SQL, HTML. ️ Грамотная письменная и устная..."
+  },
+  {
+    "name": "Аналитик данных (стажер)",
+    "url_vacancy": "https://hh.ru/vacancy/92831248",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Знание базового SQL, <highlighttext>Python</highlighttext>. Знание математической статистики и теории вероятности. Продуктовое мышление, нацеленность на результат для бизнеса. Опыт работы с..."
+  },
+  {
+    "name": "Стажер-программист Python",
+    "url_vacancy": "https://hh.ru/vacancy/92058258",
+    "salary_from": 60000,
+    "salary_to": 0,
+    "salary_currency": "RUR",
+    "requirements": "Опыт работы с openCV на <highlighttext>Python</highlighttext>. Опыт работы с нейронными сетями. Опыт работы с ОС Linux. Способность к обучению, в..."
+  },
+  {
+    "name": "Стажер-программист Python (web-parsing)",
+    "url_vacancy": "https://hh.ru/vacancy/92532321",
+    "salary_from": 0,
+    "salary_to": 30000,
+    "salary_currency": "RUR",
+    "requirements": "1. Знание языка программирования <highlighttext>Python</highlighttext>. 2. Опыт работы с фреймворком Scrapy или другими инструментами для парсинга данных. 3. "
+  },
+  {
+    "name": "Программист-стажер",
+    "url_vacancy": "https://hh.ru/vacancy/92947631",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Высшее или неоконченное высшее техническое образование: физика/математика/вычислительная математика/кибернетика/информационные технологии. Знание теоретических основ: математический анализ, дискретный анализ..."
+  },
+  {
+    "name": "Стажер Python Back-end (офис)",
+    "url_vacancy": "https://hh.ru/vacancy/92900134",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Основы <highlighttext>Python</highlighttext>, умение писать классы. Основы SQL, понимание работы JOIN / LEFT JOIN. Навыки работы с Linux (командная строка)."
+  },
+  {
+    "name": "Стажер-разработчик",
+    "url_vacancy": "https://hh.ru/vacancy/92703101",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Базовые технические знания и навыки в ИТ. Базовое знание языка <highlighttext>Python</highlighttext>. Желание вникать в бизнес-логику/бизнес-процессы. Самостоятельность. "
+  },
+  {
+    "name": "Стажер Data Scientist",
+    "url_vacancy": "https://hh.ru/vacancy/92966644",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Ключевые навыки: Фундаментальные науки: математический анализ, теория вероятности, алгебра, статистика. Знание классических ML-алгоритмов, понимание, как они устроены изнутри. "
+  },
+  {
+    "name": "Стажер-разработчик Python",
+    "url_vacancy": "https://hh.ru/vacancy/92363159",
+    "salary_from": 50000,
+    "salary_to": 50000,
+    "salary_currency": "RUR",
+    "requirements": "Отличные коммуникативные навыки. Любовь к коду. Быть активным и внедрять эффективные решения."
+  },
+  {
+    "name": "Программист-стажер",
+    "url_vacancy": "https://hh.ru/vacancy/92508676",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Высшее техническое образование или последний курс. Уверенное знание языка и стандартных библиотек <highlighttext>Python</highlighttext>. Плюсом будет: Умение работать в команде, разбираться..."
+  },
+  {
+    "name": "Стажер Data scientist",
+    "url_vacancy": "https://hh.ru/vacancy/92150169",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Понимание работы с базами данных (в т.ч. опыт SQL). Навыки работы с <highlighttext>Python</highlighttext>, знание инструментов машинного обучения, проверки гипотез..."
+  },
+  {
+    "name": "Стажер-разработчик Big Data",
+    "url_vacancy": "https://hh.ru/vacancy/92964112",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Высшее IT образование по специальностям «Бизнес информатика» или «Прикладная математика и информатика» или другой IT профиль, где были предметы по..."
+  },
+  {
+    "name": "Программист-стажер",
+    "url_vacancy": "https://hh.ru/vacancy/92428765",
+    "salary_from": 0,
+    "salary_to": 0,
+    "salary_currency": "Не указано",
+    "requirements": "Обладаешь учебным опытом разработки на любом из объектно-ориентированных языков программирования (Java, C#, C++, <highlighttext>Python</highlighttext> и т.д.). "
+  }
+]
