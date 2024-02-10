@@ -66,8 +66,8 @@ class Vacancies(Vacancy):
 
         return list_dicts
 
-    @staticmethod
-    def format_list(list_response: list) -> list:
+    @classmethod
+    def format_list(cls, list_response: list) -> list:
         """
         Преобразование набора данных из JSON в список объектов
         """
@@ -92,7 +92,7 @@ class Vacancies(Vacancy):
                 salary_to = 0
                 salary_currency = "Не указано"
             requirements = one_vacancy["snippet"]["requirement"]
-            vacancy = Vacancy(title_vacancy, url_vacancy, salary_from, salary_to, salary_currency, requirements)
+            vacancy = cls(title_vacancy, url_vacancy, salary_from, salary_to, salary_currency, requirements)
             formatted_list.append(vacancy)
 
         return formatted_list
