@@ -2,7 +2,7 @@ import os
 
 from config import ROOT_DIR
 from src.API import HeadHunterAPI
-from src.JSON_Saver import JSONSaver as Js
+from src.JSON_Saver import JSONSaver
 from src.Vacancy import Vacancies
 from src.utils import filter_vacancies, get_vacancies_by_salary, sort_vacancies, get_top_vacancies, print_vacancies, \
     save_or_add
@@ -32,28 +32,32 @@ def user_interaction():
     if format_list_for_print == "1":
         print_vacancies(list_dicts)
 
-    save_or_add(DATA_DIR, list_dicts)
+    json_saver = JSONSaver(DATA_DIR)
+
+    save_or_add(list_dicts)
 
     salary_range = input("Введите диапазон зарплат(Пример: 100000 - 150000): ")  # Пример: 100000 - 150000
     ranged_vacancies = get_vacancies_by_salary(list_dicts, salary_range)
+    format_ranged_vacancies = Vacancies.format_list_exemplar(ranged_vacancies)
     top_n = int(input("Введите количество вакансий для вывода в топ N: "))
-    sorted_vacancies = sort_vacancies(ranged_vacancies)
-    top_vacancies = get_top_vacancies(sorted_vacancies, top_n)
+    sorted_vacancies = sort_vacancies(format_ranged_vacancies)
+    sorted_vacancies_list_dicts = Vacancies.add_list_dicts(sorted_vacancies)
+    top_vacancies = get_top_vacancies(sorted_vacancies_list_dicts, top_n)
     print_vacancies(top_vacancies)
 
-    save_or_add(DATA_DIR, top_vacancies)
+    save_or_add(top_vacancies)
         
     read_json_file = input("Если хотите посмотреть содержание существующего JSON файла нажмите '1': "
                            "что бы пропустить нажмите 'Enter': ")
     if read_json_file == "1":
-        for_display = Js.read_file(DATA_DIR)
+        for_display = json_saver.read_file()
         print_vacancies(for_display)
 
     while True:
         del_vacancy_from_file = input("Если хотите удалить вакансию по названию из JSON файла нажмите '1': ")
         if del_vacancy_from_file == "1":
             name_vacancy = input("Введите назание вакансии: ")
-            Js.delete_vacancy(DATA_DIR, name_vacancy)
+            json_saver.delete_vacancy(name_vacancy)
         else:
             break
 

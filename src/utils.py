@@ -1,5 +1,10 @@
+import os
+
+from config import ROOT_DIR
 from src.JSON_Saver import JSONSaver as Js
 from src.Vacancy import Vacancy
+
+DATA_DIR = os.path.join(ROOT_DIR, "data", "vacancies.json")
 
 
 def filter_vacancies(list_vacancies: list, filter_word: str) -> list:
@@ -50,7 +55,8 @@ def get_vacancies_by_salary(list_dicts: list, salary_range: str) -> list:
 
 def sort_vacancies(ranged_vacancies: list) -> list:
     """Сортировка вакансий по диапазону зарплат"""
-    sorted_vacancies = sorted(ranged_vacancies, key=lambda item: (item["salary_to"], item["salary_from"]), reverse=True)
+    # sorted_vacancies = sorted(ranged_vacancies, key=lambda item: (item["salary_to"], item["salary_from"]), reverse=True)
+    sorted_vacancies = sorted(ranged_vacancies, reverse=True)
     return sorted_vacancies
 
 
@@ -67,15 +73,16 @@ def print_vacancies(top_vacancies: list):
         print(f"{i}) {vacancy}")
 
 
-def save_or_add(path: str, any_list: list):
+def save_or_add(any_list: list):
     """Сохранение(пересохранение) JSON файла или добавление вакансий в JSON файл"""
+    json_saver = Js(DATA_DIR)
     choice = input("Если хотите сохранить вновь полученные вакансии в JSON файл"
                    "(или перезаписать существующий файл) нажмите '1';\n"
                    "если хотите добавить полученные вакансии в существующий файл нажмите '2', "
                    "что бы пропустить нажмите 'Enter': ")
     if choice == "1":
-        Js.save_file(path, any_list)
+        json_saver.save_file(any_list)
     elif choice == "2":
-        Js.add_vacancy(path, any_list)
+        json_saver.add_vacancy(any_list)
     else:
         return

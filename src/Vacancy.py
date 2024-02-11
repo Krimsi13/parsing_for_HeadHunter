@@ -38,20 +38,20 @@ class Vacancy:
             "requirements": self.requirements
         }
 
-    def __gt__(self, other):
-        return int(self.salary_from) > int(other.salary_from)
+    # def __gt__(self, other):
+    #     return int(self.salary_from) > int(other.salary_from)
 
-    def __ge__(self, other):
-        return int(self.salary_from) >= int(other.salary_from)
+    # def __ge__(self, other):
+    #     return int(self.salary_from) >= int(other.salary_from)
 
     def __lt__(self, other):
         return int(self.salary_from) < int(other.salary_from)
 
-    def __le__(self, other):
-        return int(self.salary_from) <= int(other.salary_from)
+    # def __le__(self, other):
+    #     return int(other.salary_from) <= int(self.salary_from)
 
-    def __eq__(self, other):
-        return int(self.salary_from) == int(other.salary_from)
+    # def __eq__(self, other):
+    #     return int(self.salary_from) == int(other.salary_from)
 
 
 class Vacancies(Vacancy):
@@ -96,3 +96,23 @@ class Vacancies(Vacancy):
             formatted_list.append(vacancy)
 
         return formatted_list
+
+    @classmethod
+    def format_list_exemplar(cls, list_response: list) -> list:
+        """
+        Преобразование списка словарей в список экземпляров
+        """
+
+        formatted_list_exemplar = []
+
+        for one_vacancy in list_response:
+            title_vacancy = one_vacancy["name"]
+            url_vacancy = one_vacancy["url_vacancy"]
+            salary_from = one_vacancy["salary_from"]
+            salary_to = one_vacancy["salary_to"]
+            salary_currency = one_vacancy["salary_currency"]
+            requirements = one_vacancy["requirements"]
+            vacancy = cls(title_vacancy, url_vacancy, salary_from, salary_to, salary_currency, requirements)
+            formatted_list_exemplar.append(vacancy)
+
+        return formatted_list_exemplar
